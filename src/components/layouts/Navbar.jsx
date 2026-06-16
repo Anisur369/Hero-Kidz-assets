@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavLink from "../buttons/NavLink";
 import Logo from "./Logo";
 
@@ -41,8 +42,9 @@ const Navbar=()=>{
             {nav}
         </ul>
     </div>
-    <div className="navbar-end">
-        <a className="btn">Button</a>
+    <div className="navbar-end gap-2">
+        <Link href={"/login"} className="btn btn-primary btn-outline">Login</Link>
+        <Link href={"/register"} className="btn btn-primary btn-outline">Register</Link>
     </div>
     </div>
     )
