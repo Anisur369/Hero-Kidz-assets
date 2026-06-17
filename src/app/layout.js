@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           <Navbar />
         </header>
         <main className="py-2 md:w-11/12 mx-auto">{children}</main>
-        <footer>
+        <footer className="footer fixed bottom-0">
           <Footer />
         </footer>
       </body>

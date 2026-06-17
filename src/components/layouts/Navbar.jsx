@@ -1,6 +1,8 @@
 import Link from "next/link";
 import NavLink from "../buttons/NavLink";
 import Logo from "./Logo";
+import { BsCart4 } from "react-icons/bs";
+
 
 const Navbar=()=>{
     const nav =(
@@ -43,8 +45,11 @@ const Navbar=()=>{
         </ul>
     </div>
     <div className="navbar-end gap-2">
+        <Link href={"/cart"} className="btn btn-success">
+        <BsCart4 className="text-lg btn-outline"/>
+        </Link>
         <Link href={"/login"} className="btn btn-primary btn-outline">Login</Link>
-        <Link href={"/register"} className="btn btn-primary btn-outline">Register</Link>
+        {/* <Link href={"/register"} className="btn btn-primary btn-outline">Register</Link> */}
     </div>
     </div>
     )
